@@ -5,6 +5,8 @@ import PokemonList from './components/PokemonList';
 import PokemonDetail from './components/PokemonDetail';
 import SortModal from './components/SortModal';
 import client from './graphql/client';
+import searchIcon from './assets/img/search-icon.svg';
+import pokeballIcon from './assets/img/pokeball-icon.svg';
 import './App.css';
 
 function App() {
@@ -45,14 +47,14 @@ function App() {
           <header className="app-header">
             <div className="header-content">
               <div className="header-title">
-                <div className="pokeball-icon"></div>
+                <img src={pokeballIcon} alt="Pokéball" className="pokeball-icon" />
                 <h1>Pokédex</h1>
               </div>
             </div>
             
             <div className="search-container">
-              <div style={{ position: 'relative', flex: 1 }}>
-                <span className="search-icon"></span>
+              <div className="search-input-container">
+                <img src={searchIcon} alt="Search" className="search-icon" />
                 <input
                   type="text"
                   className="search-bar"
@@ -66,7 +68,7 @@ function App() {
                 onClick={handleFilterToggle}
                 title="Filter"
               >
-                #
+                {sortBy === 'name' ? 'A' : '#'}
               </button>
             </div>
           </header>

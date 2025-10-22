@@ -1,4 +1,4 @@
-/* PokemonCard Styles - Exact Design Match */
+/* Estilos de PokemonCard - Coincidencia Exacta del Diseño */
 .pokemon-card {
   background: #FFFFFF;
   border-radius: 12px;
@@ -65,7 +65,7 @@
 }
 
 .pokemon-types {
-  display: none; /* Hidden in minimalist design */
+  display: none; /* Oculto en el diseño minimalista */
 }
 
 .pokemon-id {
@@ -111,7 +111,7 @@
   background: rgba(231, 0, 0, 0.1);
 }
 
-/* Small Mobile Styles */
+/* Estilos para Móviles Pequeños */
 @media (max-width: 360px) {
   .pokemon-card {
     min-height: 180px;
@@ -146,7 +146,7 @@
   }
 }
 
-/* Tablet Styles */
+/* Estilos para Tablets */
 @media (min-width: 768px) {
   .pokemon-card {
     min-height: 220px;
@@ -182,7 +182,7 @@
   }
 }
 
-/* Desktop Styles */
+/* Estilos para Desktop */
 @media (min-width: 1024px) {
   .pokemon-card {
     min-height: 240px;
@@ -213,7 +213,7 @@
   }
 }
 
-/* Large Desktop Styles */
+/* Estilos para Pantallas Grandes */
 @media (min-width: 1440px) {
   .pokemon-card {
     min-height: 260px;

@@ -1,4 +1,4 @@
-/* PokemonDetail Styles - Mobile First */
+/* Estilos de PokemonDetail - Mobile First */
 .pokemon-detail-overlay {
   position: fixed;
   top: 0;
@@ -174,7 +174,7 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Pokemon Type Colors */
+/* Colores de Tipos de Pokémon */
 .type-normal { background: #A8A878; }
 .type-fire { background: #F08030; }
 .type-water { background: #6890F0; }
@@ -194,7 +194,7 @@
 .type-steel { background: #B8B8D0; }
 .type-fairy { background: #EE99AC; }
 
-/* Small Mobile Styles */
+/* Estilos para Móviles Pequeños */
 @media (max-width: 360px) {
   .pokemon-detail-overlay {
     padding: 0.25rem;
@@ -259,7 +259,7 @@
   }
 }
 
-/* Tablet Styles */
+/* Estilos para Tablets */
 @media (min-width: 768px) {
   .pokemon-detail-overlay {
     padding: 1rem;
@@ -339,7 +339,7 @@
   }
 }
 
-/* Desktop Styles */
+/* Estilos para Desktop */
 @media (min-width: 1024px) {
   .pokemon-detail-modal {
     max-width: 600px;
@@ -386,7 +386,7 @@
   }
 }
 
-/* Large Desktop Styles */
+/* Estilos para Pantallas Grandes */
 @media (min-width: 1440px) {
   .pokemon-detail-modal {
     max-width: 700px;

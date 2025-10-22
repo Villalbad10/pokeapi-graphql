@@ -1,4 +1,4 @@
-/* SortModal Styles */
+/* Estilos del Modal de Ordenamiento */
 .sort-modal-overlay {
   position: fixed;
   top: 0;
@@ -96,7 +96,7 @@
   font-weight: 500;
 }
 
-/* Mobile Styles */
+/* Estilos para Móviles */
 @media (max-width: 480px) {
   .sort-modal-overlay {
     padding: 0.5rem;

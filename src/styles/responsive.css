@@ -1,6 +1,6 @@
-/* Additional responsive utilities and mobile-specific styles */
+/* Utilidades responsivas adicionales y estilos específicos para móviles */
 
-/* Landscape orientation adjustments for mobile */
+/* Ajustes de orientación horizontal para móviles */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .app-header {
     padding: 0.5rem;
@@ -60,7 +60,7 @@
   }
 }
 
-/* Very small screens (iPhone SE, etc.) */
+/* Pantallas muy pequeñas (iPhone SE, etc.) */
 @media screen and (max-width: 320px) {
   .pokemon-grid {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -96,7 +96,7 @@
   }
 }
 
-/* Large screens optimization */
+/* Optimización para pantallas grandes */
 @media screen and (min-width: 1920px) {
   .app-main {
     max-width: 1400px;
@@ -135,7 +135,7 @@
   }
 }
 
-/* Print styles */
+/* Estilos para impresión */
 @media print {
   .app {
     background: white !important;
@@ -167,7 +167,7 @@
   }
 }
 
-/* Dark mode support */
+/* Soporte para modo oscuro */
 @media (prefers-color-scheme: dark) {
   .pokemon-card {
     background: #2c3e50;
