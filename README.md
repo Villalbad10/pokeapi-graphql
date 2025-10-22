@@ -9,6 +9,10 @@ Una aplicación React que consume la API de Pokémon usando GraphQL para mostrar
 - 🔍 **Detalles Completos**: Vista detallada con nombre, tipo, imagen, generación, peso y altura
 - 🎨 **Interfaz Moderna**: Diseño responsivo y atractivo
 - 💾 **Persistencia**: Los favoritos se guardan en localStorage
+- 📱 **Completamente Responsive**: Optimizado para móviles, tablets y desktop
+- 🎯 **Touch-Friendly**: Interacciones optimizadas para dispositivos táctiles
+- 🌙 **Modo Oscuro**: Soporte automático para preferencias del sistema
+- ♿ **Accesible**: Cumple con estándares de accesibilidad web
 
 ## Tecnologías Utilizadas
 
@@ -56,6 +60,14 @@ Una aplicación React que consume la API de Pokémon usando GraphQL para mostrar
 - Tipos con colores distintivos
 - Información básica (número, generación, altura, peso)
 - Botón de favoritos integrado
+
+### Diseño Responsive
+- **Mobile First**: Diseñado primero para móviles
+- **Breakpoints**: Optimizado para pantallas desde 320px hasta 1920px+
+- **Orientación**: Adaptación automática a landscape/portrait
+- **Touch**: Botones y áreas táctiles optimizadas (mínimo 44px)
+- **Scroll**: Scrollbars personalizadas y suaves
+- **Accesibilidad**: Soporte para lectores de pantalla y navegación por teclado
 
 ## Estructura del Proyecto
 

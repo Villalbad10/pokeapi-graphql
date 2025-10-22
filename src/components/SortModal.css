@@ -1,0 +1,156 @@
+/* SortModal Styles */
+.sort-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.sort-modal {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.sort-modal-header {
+  background: #E70000;
+  padding: 1rem;
+  color: white;
+}
+
+.sort-modal-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.sort-modal-body {
+  padding: 1rem;
+  background: white;
+}
+
+.sort-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.sort-option:hover {
+  background-color: #f8f9fa;
+}
+
+.sort-option:last-child {
+  margin-bottom: 0;
+}
+
+.sort-option input[type="radio"] {
+  display: none;
+}
+
+.radio-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #E70000;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.sort-option input[type="radio"]:checked + .radio-custom {
+  background-color: #E70000;
+}
+
+.sort-option input[type="radio"]:checked + .radio-custom::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.option-text {
+  font-size: 0.9rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .sort-modal-overlay {
+    padding: 0.5rem;
+  }
+  
+  .sort-modal {
+    min-width: 180px;
+    max-width: 220px;
+  }
+  
+  .sort-modal-header {
+    padding: 0.75rem;
+  }
+  
+  .sort-modal-header h3 {
+    font-size: 0.9rem;
+  }
+  
+  .sort-modal-body {
+    padding: 0.75rem;
+  }
+  
+  .sort-option {
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+  }
+  
+  .radio-custom {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .sort-option input[type="radio"]:checked + .radio-custom::after {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .option-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Animation */
+.sort-modal {
+  animation: modalSlideIn 0.2s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

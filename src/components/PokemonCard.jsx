@@ -40,8 +40,9 @@ const PokemonCard = ({ pokemon, onSelect }) => {
             </span>
           ))}
         </div>
-        <p className="pokemon-id">#{pokemon.id}</p>
       </div>
+      
+      <p className="pokemon-id">#{pokemon.id}</p>
       
       <button 
         className={`favorite-button ${isFavorite(pokemon.id) ? 'favorited' : ''}`}
