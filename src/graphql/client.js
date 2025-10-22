@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
 const httpLink = createHttpLink({
-  uri: 'https://graphql.pokeapi.co/v1beta2',
+  uri: 'https://beta.pokeapi.co/graphql/v1beta',
 });
 
 const client = new ApolloClient({
