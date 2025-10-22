@@ -52,7 +52,7 @@ function App() {
             
             <div className="search-container">
               <div style={{ position: 'relative', flex: 1 }}>
-                <span className="search-icon">🔍</span>
+                <span className="search-icon"></span>
                 <input
                   type="text"
                   className="search-bar"

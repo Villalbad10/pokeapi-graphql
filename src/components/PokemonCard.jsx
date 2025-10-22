@@ -34,11 +34,6 @@ const PokemonCard = ({ pokemon, onSelect }) => {
       <div className="pokemon-info">
         <h3 className="pokemon-name">{pokemon.name}</h3>
         <div className="pokemon-types">
-          {pokemon.types.map((type, index) => (
-            <span key={index} className={`type-badge type-${type}`}>
-              {type}
-            </span>
-          ))}
         </div>
       </div>
       
