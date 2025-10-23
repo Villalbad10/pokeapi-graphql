@@ -1,0 +1,286 @@
+/* Estilos del Modal de Favoritos */
+.favorites-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.favorites-modal {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.favorites-modal-header {
+  background: #E70000;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.favorites-modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.close-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.favorites-modal-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.no-favorites {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.no-favorites-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-favorites h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.no-favorites p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.favorites-count {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #E70000;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.favorite-item {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.favorite-item:hover {
+  border-color: #E70000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(231, 0, 0, 0.1);
+}
+
+.favorite-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-pokemon-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.no-image-small {
+  width: 80px;
+  height: 80px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.favorite-info {
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.favorite-number {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.remove-favorite-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(231, 0, 0, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #E70000;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.favorite-item:hover .remove-favorite-button {
+  opacity: 1;
+}
+
+.remove-favorite-button:hover {
+  background: rgba(231, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .favorites-modal-overlay {
+    padding: 0.5rem;
+  }
+  
+  .favorites-modal {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 15px;
+  }
+  
+  .favorites-modal-header {
+    padding: 1rem;
+  }
+  
+  .favorites-modal-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .favorites-modal-content {
+    padding: 1rem;
+  }
+  
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .favorite-item {
+    padding: 0.75rem;
+  }
+  
+  .favorite-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-image-small {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+  
+  .favorite-name {
+    font-size: 0.9rem;
+  }
+  
+  .favorite-number {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .favorite-item {
+    padding: 0.5rem;
+  }
+  
+  .favorite-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .no-image-small {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  
+  .favorite-name {
+    font-size: 0.8rem;
+  }
+  
+  .favorite-number {
+    font-size: 0.7rem;
+  }
+}

@@ -86,7 +86,7 @@
 .pokemon-detail-header h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: var(--pokemon-primary);
+  color: #FFFFFF;
   text-transform: capitalize;
   font-weight: bold;
   position: absolute;
@@ -96,7 +96,7 @@
 
 .pokemon-detail-number {
   font-size: 1rem;
-  color: var(--pokemon-primary);
+  color: #FFFFFF;
   opacity: 0.9;
   font-weight: 500;
 }
