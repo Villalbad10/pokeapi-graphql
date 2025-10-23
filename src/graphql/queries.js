@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-// Query to get all Pokemon with basic information
+// Consulta para obtener todos los Pokémon con información básica
 export const GET_ALL_POKEMON = gql`
   query GetAllPokemon {
     pokemon_v2_pokemon(limit: 1000) {
@@ -22,11 +22,17 @@ export const GET_ALL_POKEMON = gql`
           name
         }
       }
+      pokemon_v2_pokemonstats {
+        base_stat
+        pokemon_v2_stat {
+          name
+        }
+      }
     }
   }
 `;
 
-// Query to get detailed Pokemon information by ID
+// Consulta para obtener información detallada de Pokémon por ID
 export const GET_POKEMON_BY_ID = gql`
   query GetPokemonById($id: Int!) {
     pokemon_v2_pokemon_by_pk(id: $id) {
@@ -45,6 +51,12 @@ export const GET_POKEMON_BY_ID = gql`
       weight
       pokemon_v2_pokemonspecy {
         pokemon_v2_generation {
+          name
+        }
+      }
+      pokemon_v2_pokemonstats {
+        base_stat
+        pokemon_v2_stat {
           name
         }
       }

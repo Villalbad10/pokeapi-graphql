@@ -13,7 +13,7 @@ export const usePokemonFavorites = () => {
 export const PokemonFavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
-  // Load favorites from localStorage on component mount
+  // Cargar favoritos desde localStorage al montar el componente
   useEffect(() => {
     const savedFavorites = localStorage.getItem('pokemonFavorites');
     if (savedFavorites) {
@@ -25,7 +25,7 @@ export const PokemonFavoritesProvider = ({ children }) => {
     }
   }, []);
 
-  // Save favorites to localStorage whenever favorites change
+  // Guardar favoritos en localStorage cuando cambien los favoritos
   useEffect(() => {
     localStorage.setItem('pokemonFavorites', JSON.stringify(favorites));
   }, [favorites]);
